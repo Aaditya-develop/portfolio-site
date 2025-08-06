@@ -1,0 +1,64 @@
+body{
+    background-image: url("back.avif")
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 200px; /* You can adjust this to move it further up */
+    font-family: 'Press Start 2P', "consolas";
+    color: red;
+}
+img {
+    position: relative;
+    right: -1000px;
+    margin-top: 50px;
+}
+.icons {
+    text-align: center;
+    margin-top: 40px;
+  }
+.fa-instagram{
+    font-size: 100px;
+    color:rgb(251, 0, 255);
+}
+.fa-facebook{
+    font-size: 100px;
+    color:rgb(251, 0, 255);
+}
+.fa-linkedin{
+    font-size: 100px;
+    color:rgb(251, 0, 255);
+}
+.icons{
+    display: flex;
+    margin-top: 300px;
+    justify-content: flex-end;   /* ➤ Aligns buttons to the right */
+    gap: 50px;
+    margin-right: 1000px;
+}
+p{
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: wavy;
+    font-size: 18px;
+
+}
+.buttons {
+    display: flex;               /* ➤ Lays out buttons in a row */
+    justify-content: flex-end;   /* ➤ Aligns buttons to the right */
+    gap: 10px;                   /* ➤ Optional: adds space between buttons */
+    margin-top: -300px;          /* ➤ Moves buttons up */
+    margin-right: 300px;          /* ➤ Pushes them away from the right edge */
+}
+
+button {
+    margin: 10px 0;
+}
+
+button:hover{
+    background-color: black;
+    color:white;
+}
+

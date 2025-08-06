@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About me part</title>
+    <link rel="stylesheet" href="aboutme.css" />
+  </head>
+  <body>
+    <div class="image-container">
+      <img
+        src="acphoto.jpg"
+        alt="This is picture of Aaditya"
+        width="500"
+        class="profile-pic"
+      />
+    </div>
+
+    <h1><u>Who am I?</u></h1>
+
+    <div class="buttons">
+      <a href="aaditya.html" title="This takes you to the Home page"
+        ><button>HOME</button></a
+      >
+      <a href="aboutme.html" title="This takes you to all about Aaditya"
+        ><button>ABOUT</button></a
+      >
+      <a href="Resume.pdf" title="This takes you to Aadityas resume" download
+        ><button>RESUME</button></a
+      >
+    </div>
+
+    <div class="explain">
+      <p><span class="auto-typed"></span></p>
+    </div>
+
+    <!-- Typed.js script -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-typed", {
+        strings: [
+          `
+          Hi, I'm <strong>Aaditya Chandola</strong> — an aspiring software engineer with a strong interest in <u>machine learning</u> and <em>artificial intelligence</em>. I’m passionate about exploring how technology can be used to solve everyday problems and make a meaningful impact. Born in <b>New Brunswick, New Jersey</b> in 2005, I’ve always had a curious mindset and a love for building and learning new things.<br><br>
+          Beyond tech, I enjoy <strong>playing soccer</strong>, <u>running in the mornings</u>, <i>cooking nutritious meals</i>, and spending quality time with my girlfriend and family. I’m always looking for opportunities to grow, improve my skills, and contribute to innovative, real-world projects.
+        `,
+        ],
+        typeSpeed: 40,
+        loop: false,
+        html: true,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    background-image: url("back.avif");
+  }
+  
+  .header h1,
+.header h2,
+.header h3 {
+  min-height: 50px; /* Adjust height depending on font size */
+  display: block;
+}
+.header h1,
+.header h2,
+.header h3 {
+  transition: all 0.3s ease;
+}
+  .header {
+    margin-top: 100px;
+    margin-left: 100px;
+    color: black;
+    font-family: 'Press Start 2P', "consolas";
+  }
+  
+  .header h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    transform: translateX(-620px); /* ⬅️ Moves it 100px to the left */
+  }
+  
+  .header h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+  }
+  
+  .header h3 {
+    font-size: 20px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 0px;
+    margin-right: 300px;
+    transform: translate(-80px,-300px);
+    
+  }
+  
+  button {
+    margin: 10px 0;
+  }
+  
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Image */
+  img {
+    position: relative;
+    right: -1000px;
+    margin-top: 100px;
+    animation: mySlide 5s forwards;
+    transform: translateY(-300px); /* ⬅️ Moves it 100px to the left */
+  }
+  
+  @keyframes mySlide {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+  
+  /* Icons styling */
+  .icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    transform: translate(-170px, -200px);
+
+  }
+  
+  .icons i {
+    font-size: 80px;
+    opacity: 0;
+  }
+  .icons a .fa-instagram {
+    color: rgb(251, 0, 255) !important;
+  }
+  .icons a .fa-facebook {
+    color: blue !important;
+  }
+  .icons a .fa-linkedin {
+    color: blue !important;
+  }
+  .icons a .fa-envelope {
+    color: black !important;
+  }
+  
+  
+  /* Animation to be triggered via JS */
+  .animate-icon {
+    animation: slideUp 1s ease forwards;
+  }
+  
+  .animate-icon:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .animate-icon:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .animate-icon:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
