@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aaditya's Personal Website</title>
+    <link rel="stylesheet" href="aaditya.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <script
+      src="https://kit.fontawesome.com/c0546ef056.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1><span class="auto-typed"></span></h1>
+      <h2><span class="second-typed"></span></h2>
+      <h3><span class="third-typed"></span></h3>
+
+      <!-- Social icons directly under h3 -->
+      <div class="icons">
+        <a href="https://instagram.com/chandolaaaditya" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com" title="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/aaditya-chandola-141682345/"
+          title="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="aadityachandola@yahoo.com" title="Email Me">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-typed", {
+        strings: ["I'm Aaditya Chandola"],
+        typeSpeed: 85,
+        loop: false,
+        onComplete: function () {
+          var styped = new Typed(".second-typed", {
+            strings: ["An aspiring software engineer"],
+            typeSpeed: 85,
+            loop: false,
+            onComplete: function () {
+              var ttyped = new Typed(".third-typed", {
+                strings: [
+                  "Take a journey through my portfolio and learn more about me!!",
+                ],
+                typeSpeed: 85,
+                loop: false,
+                onComplete: function () {
+                  // Trigger icon animation
+                  const icons = document.querySelectorAll(".icons i");
+                  icons.forEach((icon) => icon.classList.add("animate-icon"));
+                },
+              });
+            },
+          });
+        },
+      });
+    </script>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <a href="aaditya.html"><button>HOME</button></a>
+      <a href="aboutme.html"><button>ABOUT</button></a>
+      <a href="Resume.pdf" download><button>RESUME</button></a>
+    </div>
+
+    <!-- Image -->
+    <div class="image-container">
+      <img src="lilAadi.JPEG" alt="Aaditya's Photo" width="500" />
+    </div>
+  </body>
+</html>
