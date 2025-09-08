@@ -1,16 +1,16 @@
 body{
-    background-image: url("learning.avif")
+    background-image: url("orange.jpg")
 
 }
 h1 {
     text-align: center;
     margin-top: 20px;
     font-family: 'Press Start 2P', "consolas";
-    color: red;
+    color: black;
   }
 
 .header{
-    color: red;
+    color: black;
     font-family:'Press Start 2P', "consolas";
     margin-top: 50px;
 
@@ -24,7 +24,7 @@ img {
     margin-top: 40px;
   }
 p{
-    color: red;
+    color: black;
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
     text-decoration: wavy;
@@ -56,10 +56,10 @@ button{
     right: 1000px;  /* Try 200, 250, etc. */
     display: flex;
     gap: 10px;
+    transform: translate(-100px, 50px);
   }
 
   
-
 button:hover{
     background-color: black;
     color:white;
