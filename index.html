@@ -1,82 +1,455 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Aaditya's Personal Website</title>
-    <link rel="stylesheet" href="aaditya.css" />
-    <link rel="stylesheet" href="contact.css" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aaditya Chandola · Software Engineer</title>
+    <meta
+      name="description"
+      content="Aaditya Chandola: Computer Science student at Rutgers building AI agents and full-stack software."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>document.documentElement.classList.add("js");</script>
     <script
       src="https://kit.fontawesome.com/c0546ef056.js"
       crossorigin="anonymous"
+      defer
     ></script>
   </head>
   <body>
-    <div class="header">
-      <h1><span class="auto-typed"></span></h1>
-      <h2><span class="second-typed"></span></h2>
-      <h3><span class="third-typed"></span></h3>
+    <div class="bg-glow" aria-hidden="true"></div>
 
-      <!-- Social icons directly under h3 -->
-      <div class="icons">
-        <a href="https://instagram.com/chandolaaaditya" title="Instagram">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://facebook.com" title="Facebook">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/aaditya-chandola-141682345/"
-          title="LinkedIn"
+    <!-- Navigation -->
+    <header class="nav">
+      <a href="#top" class="nav-logo">AC<span>.</span></a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="theResume.pdf" target="_blank" rel="noopener" class="nav-cta"
+          >Resume</a
         >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="aadityachandola@yahoo.com" title="Email Me">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </div>
-    </div>
+      </nav>
+    </header>
 
-    <!-- Typed.js -->
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">
+            <span class="dot"></span> CS @ Rutgers · Class of 2028
+          </p>
+          <h1>
+            Hi, I'm <span class="gradient-text">Aaditya Chandola</span>.
+          </h1>
+          <p class="hero-sub">I build <span class="typed"></span></p>
+          <p class="hero-lead">
+            Software engineering student from New Brunswick, NJ, focused on
+            AI agents, retrieval systems and full-stack software that solves real
+            problems for real people.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary"
+              >View my work <i class="fa-solid fa-arrow-down"></i
+            ></a>
+            <a href="theResume.pdf" download class="btn btn-ghost"
+              ><i class="fa-solid fa-file-arrow-down"></i> Download resume</a
+            >
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Aaditya-develop" aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/aaditya-chandola-141682345/"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://instagram.com/chandolaaaditya"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="mailto:aadityachandola@yahoo.com" aria-label="Email"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="assets/portrait.jpg" alt="Portrait of Aaditya Chandola" />
+          </div>
+          <div class="float-chip chip-1">
+            <i class="fa-solid fa-diagram-project"></i> LangGraph agents
+          </div>
+          <div class="float-chip chip-2">
+            <i class="fa-solid fa-code"></i> Software engineering
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="section-head reveal">
+          <span class="section-num">01</span>
+          <h2>About me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img
+              src="assets/about.jpg"
+              alt="Aaditya standing next to a bronze statue"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text reveal">
+            <p>
+              I'm a Computer Science student at
+              <strong>Rutgers University</strong>, born in New Brunswick in
+              2005. I'm drawn to <strong>machine learning</strong> and
+              <strong>AI</strong>, especially the engineering that turns a
+              language model into a dependable system: retrieval, routing,
+              evaluation and guardrails.
+            </p>
+            <p>
+              I like shipping things people actually use. Right now that means a
+              timesheet app for a local creative studio and a research assistant
+              that reads SEC filings so you don't have to.
+            </p>
+            <p>
+              Away from the keyboard I'm playing soccer, running in the mornings,
+              cooking healthy meals, or spending time with my girlfriend and
+              family.
+            </p>
+            <ul class="facts">
+              <li>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                  <strong>B.S. Computer Science</strong>
+                  <span>Rutgers, New Brunswick · Expected May 2028</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-certificate"></i>
+                <div>
+                  <strong>Machine Learning Specialization</strong>
+                  <span>DeepLearning.AI · Coursera · 2025</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-trophy"></i>
+                <div>
+                  <strong>2022 NJ State Champion</strong>
+                  <span>South Brunswick HS Bowling</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-language"></i>
+                <div>
+                  <strong>Seal of Biliteracy</strong>
+                  <span>English &amp; Spanish</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="section-head reveal">
+          <span class="section-num">02</span>
+          <h2>Featured projects</h2>
+        </div>
+
+        <!-- RAG project -->
+        <article class="project reveal">
+          <div class="project-info">
+            <p class="project-kicker">AI · Agentic RAG</p>
+            <h3>SEC 10-K Research Assistant</h3>
+            <p>
+              A multi-agent research assistant that answers questions about
+              company annual reports. A <strong>LangGraph</strong> orchestrator
+              decides whether each question needs the filings, live web data, or
+              neither, then hands off to specialised retriever, search and writer
+              agents.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <strong>Hybrid retrieval:</strong> ChromaDB vector search
+                (OpenAI <code>text-embedding-3-small</code>) merged with BM25
+                keyword ranking, so exact figures and table rows aren't missed.
+              </li>
+              <li>
+                <strong>Self-checking writer:</strong> GPT-4o drafts an answer,
+                a second pass checks it against the source chunks and
+                regenerates when it isn't grounded.
+              </li>
+              <li>
+                <strong>Measured, not guessed:</strong> a RAGAS suite of 10-K
+                questions fails the run if faithfulness drops below 0.90 or
+                answer relevancy below 0.85.
+              </li>
+              <li>
+                <strong>Production plumbing:</strong> FastAPI
+                <code>/ask</code> endpoint returning cited sources, Langfuse
+                tracing, and CI/CD to Azure App Service via GitHub Actions.
+              </li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>LangGraph</span><span>LangChain</span
+              ><span>GPT-4o</span><span>ChromaDB</span><span>BM25</span
+              ><span>Tavily</span><span>FastAPI</span><span>RAGAS</span
+              ><span>Langfuse</span><span>Azure</span>
+            </div>
+          </div>
+
+          <div class="project-visual">
+            <div class="pipeline" aria-label="Architecture of the research assistant">
+              <div class="pipe-node pipe-start">
+                <i class="fa-regular fa-comment"></i> User question
+              </div>
+              <div class="pipe-arrow"></div>
+              <div class="pipe-node pipe-router">
+                <i class="fa-solid fa-route"></i> Router agent
+                <small>LangGraph · GPT-4o</small>
+              </div>
+              <div class="pipe-branches">
+                <div class="pipe-branch">
+                  <span class="pipe-label">RETRIEVE</span>
+                  <div class="pipe-node">
+                    <i class="fa-solid fa-database"></i> Hybrid search
+                    <small>Chroma + BM25</small>
+                  </div>
+                </div>
+                <div class="pipe-branch">
+                  <span class="pipe-label">SEARCH</span>
+                  <div class="pipe-node">
+                    <i class="fa-solid fa-globe"></i> Web search
+                    <small>Tavily</small>
+                  </div>
+                </div>
+                <div class="pipe-branch">
+                  <span class="pipe-label">GENERATE</span>
+                  <div class="pipe-node">
+                    <i class="fa-solid fa-brain"></i> Model knowledge
+                    <small>+ chat history</small>
+                  </div>
+                </div>
+              </div>
+              <div class="pipe-arrow"></div>
+              <div class="pipe-node pipe-writer">
+                <i class="fa-solid fa-pen-nib"></i> Writer agent
+                <span class="loop-badge"
+                  ><i class="fa-solid fa-rotate"></i> hallucination check</span
+                >
+              </div>
+              <div class="pipe-arrow"></div>
+              <div class="pipe-node pipe-end">
+                <i class="fa-solid fa-check"></i> Grounded answer + sources
+              </div>
+            </div>
+            <div class="metrics">
+              <div><strong>≥ 0.90</strong><span>faithfulness gate</span></div>
+              <div><strong>≥ 0.85</strong><span>relevancy gate</span></div>
+              <div><strong>3</strong><span>specialist agents</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Board & Brush -->
+        <article class="project project-flip reveal">
+          <div class="project-info">
+            <p class="project-kicker">Software engineering · Client work</p>
+            <h3>Board &amp; Brush Timesheet App</h3>
+            <p>
+              A full-stack mobile app built for
+              <strong>Board &amp; Brush Creative Studio</strong> to replace
+              paper timesheets. Employees log their shifts in seconds; managers
+              get one place to run the team and pull hour reports for payroll.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <strong>Role-based access:</strong> separate employee and
+                admin experiences from one login, with secure password changes
+                and resets.
+              </li>
+              <li>
+                <strong>Time tracking:</strong> record date, start and end time;
+                hours are calculated and stored automatically.
+              </li>
+              <li>
+                <strong>Admin tools:</strong> add and remove employees, fix or
+                delete timesheet entries, and generate reports per employee or
+                date range.
+              </li>
+              <li>
+                <strong>Supabase + PostgreSQL backend:</strong> relational
+                schema linking users and time logs, with server-side RPC
+                functions for fast reporting. Built to support 10+ employees.
+              </li>
+            </ul>
+            <div class="tags">
+              <span>Swift</span><span>Supabase</span
+              ><span>PostgreSQL</span><span>async/await</span><span>Xcode</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/Aaditya-develop/board-brush-timesheet-ios"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-ghost btn-sm"
+                ><i class="fa-brands fa-github"></i> View code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-visual">
+            <div class="phone" aria-label="Illustration of the timesheet app">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app-header">
+                  <span class="app-brand">Board &amp; Brush</span>
+                  <span class="app-title">Record hours</span>
+                </div>
+                <div class="app-field">
+                  <label>Date worked</label>
+                  <div>Thu, Oct 2</div>
+                </div>
+                <div class="app-row">
+                  <div class="app-field">
+                    <label>Start</label>
+                    <div>9:00 AM</div>
+                  </div>
+                  <div class="app-field">
+                    <label>End</label>
+                    <div>5:30 PM</div>
+                  </div>
+                </div>
+                <div class="app-total">
+                  <span>Total</span><strong>8.5 hrs</strong>
+                </div>
+                <div class="app-button">Submit hours</div>
+                <div class="app-list">
+                  <div><span>Mon</span><span>7.0</span></div>
+                  <div><span>Tue</span><span>8.0</span></div>
+                  <div><span>Wed</span><span>6.5</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Smaller projects -->
+        <div class="mini-projects">
+          <article class="mini reveal">
+            <i class="fa-solid fa-code"></i>
+            <h4>This portfolio</h4>
+            <p>
+              Hand-written HTML, CSS and JavaScript with no frameworks.
+              Responsive layout, scroll animations and a typing hero.
+            </p>
+            <a
+              href="https://github.com/Aaditya-develop/portfolio-site"
+              target="_blank"
+              rel="noopener"
+              >Source <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </article>
+          <article class="mini reveal">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>Machine learning coursework</h4>
+            <p>
+              Regression, neural networks, decision trees and clustering in
+              Python and NumPy through the DeepLearning.AI specialization.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="section-head reveal">
+          <span class="section-num">03</span>
+          <h2>Toolkit</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h4><i class="fa-solid fa-terminal"></i> Languages</h4>
+            <div class="tags">
+              <span>Python</span><span>Swift</span><span>Java</span
+              ><span>SQL</span><span>JavaScript</span><span>HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h4><i class="fa-solid fa-robot"></i> AI &amp; data</h4>
+            <div class="tags">
+              <span>LangGraph</span><span>LangChain</span><span>OpenAI API</span
+              ><span>ChromaDB</span><span>RAGAS</span><span>NumPy</span
+              ><span>Jupyter</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h4><i class="fa-solid fa-layer-group"></i> Software &amp; backend</h4>
+            <div class="tags">
+              <span>Xcode</span><span>FastAPI</span
+              ><span>Supabase</span><span>PostgreSQL</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h4><i class="fa-solid fa-cloud"></i> Shipping</h4>
+            <div class="tags">
+              <span>Git</span><span>GitHub Actions</span><span>Azure</span
+              ><span>Langfuse</span><span>VS Code</span>
+            </div>
+          </div>
+        </div>
+        <p class="coursework reveal">
+          <strong>Coursework:</strong> Data Structures &amp; Algorithms ·
+          Discrete Structures · Computer Architecture · Linear Algebra ·
+          Calculus I &amp; II · Physics I &amp; II
+        </p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact reveal">
+        <h2>Let's build something.</h2>
+        <p>
+          I'm looking for software engineering and AI internships. If you have
+          a role, a project or just a question, my inbox is open.
+        </p>
+        <div class="hero-actions center">
+          <a href="mailto:aadityachandola@yahoo.com" class="btn btn-primary"
+            ><i class="fa-solid fa-envelope"></i> Say hello</a
+          >
+          <a
+            href="https://www.linkedin.com/in/aaditya-chandola-141682345/"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-ghost"
+            ><i class="fa-brands fa-linkedin-in"></i> Connect on LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Aaditya Chandola · Built by hand in New Jersey
+      </p>
+    </footer>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed(".auto-typed", {
-        strings: ["I'm Aaditya Chandola"],
-        typeSpeed: 5,
-        loop: false,
-        onComplete: function () {
-          var styped = new Typed(".second-typed", {
-            strings: ["An aspiring software engineer"],
-            typeSpeed: 5,
-            loop: false,
-            onComplete: function () {
-              var ttyped = new Typed(".third-typed", {
-                strings: [
-                  "Take a journey through my portfolio and learn more about me!!",
-                ],
-                typeSpeed: 5,
-                loop: false,
-                onComplete: function () {
-                  // Trigger icon animation
-                  const icons = document.querySelectorAll(".icons i");
-                  icons.forEach((icon) => icon.classList.add("animate-icon"));
-                },
-              });
-            },
-          });
-        },
-      });
-    </script>
-
-    <!-- Buttons -->
-    <div class="buttons">
-      <a href="index.html"><button>HOME</button></a>
-      <a href="aboutme.html"><button>ABOUT</button></a>
-      <a href="theResume.pdf" download><button>RESUME</button></a>
-    </div>
-
-    <!-- Image -->
-    <div class="image-container">
-      <img src="newPhoto.jpg" alt="Aaditya's Photo" width="500" />
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>
