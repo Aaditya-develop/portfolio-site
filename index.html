@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=2" />
     <script>document.documentElement.classList.add("js");</script>
     <script
       src="https://kit.fontawesome.com/c0546ef056.js"
@@ -33,6 +33,7 @@
       </button>
       <nav class="nav-links">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -134,7 +135,7 @@
               <li>
                 <i class="fa-solid fa-graduation-cap"></i>
                 <div>
-                  <strong>B.S. Computer Science</strong>
+                  <strong>B.S. Computer Science &amp; Data Science</strong>
                   <span>Rutgers, New Brunswick · Expected May 2028</span>
                 </div>
               </li>
@@ -164,10 +165,61 @@
         </div>
       </section>
 
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <div class="section-head reveal">
+          <span class="section-num">02</span>
+          <h2>Experience</h2>
+        </div>
+        <article class="job reveal">
+          <div class="job-meta">
+            <span class="job-dates">May 2026 – Aug 2026</span>
+            <span class="job-place">Ryan, LLC</span>
+          </div>
+          <div class="job-body">
+            <h3>Software Engineering Intern <span class="gradient-text">(AI)</span></h3>
+            <p class="job-sub">
+              Built AI retrieval pipelines for Ryan's tax teams, working
+              closely with the Canadian tax team.
+            </p>
+            <div class="job-stats">
+              <div><strong>80%</strong><span>context precision</span></div>
+              <div><strong>95%</strong><span>better knowledge access</span></div>
+            </div>
+            <ul class="feature-list">
+              <li>
+                Built <strong>AG2 retrieval pipelines</strong> for tax teams,
+                reaching 80% context precision and a 95% improvement in
+                knowledge access.
+              </li>
+              <li>
+                Tuned <strong>hybrid retrieval</strong> against custom
+                evaluation benchmarks, optimizing BM25 and vector search
+                precision.
+              </li>
+              <li>
+                Worked directly with the <strong>Canadian tax team</strong> to
+                align pipeline outputs with real enterprise business workflows.
+              </li>
+              <li>
+                Built <strong>automated document parsing</strong> workflows to
+                clean unstructured tax filings and index them into vector
+                stores.
+              </li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>AG2</span><span>RAG</span
+              ><span>BM25</span><span>Vector search</span
+              ><span>Evaluation benchmarks</span><span>Document parsing</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
       <!-- Projects -->
       <section id="projects" class="section">
         <div class="section-head reveal">
-          <span class="section-num">02</span>
+          <span class="section-num">03</span>
           <h2>Featured projects</h2>
         </div>
 
@@ -379,7 +431,7 @@
       <!-- Skills -->
       <section id="skills" class="section">
         <div class="section-head reveal">
-          <span class="section-num">03</span>
+          <span class="section-num">04</span>
           <h2>Toolkit</h2>
         </div>
         <div class="skills-grid">
@@ -393,7 +445,7 @@
           <div class="skill-card reveal">
             <h4><i class="fa-solid fa-robot"></i> AI &amp; data</h4>
             <div class="tags">
-              <span>LangGraph</span><span>LangChain</span><span>OpenAI API</span
+              <span>AG2</span><span>LangGraph</span><span>LangChain</span><span>OpenAI API</span
               ><span>ChromaDB</span><span>RAGAS</span><span>NumPy</span
               ><span>Jupyter</span>
             </div>
@@ -449,6 +501,6 @@
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
   </body>
 </html>

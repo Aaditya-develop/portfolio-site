@@ -852,6 +852,78 @@ main {
   font-weight: 600;
 }
 
+/* ---------- Experience ---------- */
+.job {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  padding: 40px 44px;
+  border-radius: 26px;
+  background: linear-gradient(180deg, var(--bg-card), var(--bg-elev));
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.job::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-2), transparent);
+  opacity: 0.6;
+}
+.job-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-left: 2px solid var(--accent-2);
+  padding-left: 16px;
+  align-self: start;
+}
+.job-dates {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent-2);
+}
+.job-place {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+}
+.job h3 {
+  font-size: clamp(24px, 2.8vw, 30px);
+  margin-bottom: 10px;
+}
+.job-sub {
+  color: var(--muted);
+  margin: 0 0 22px;
+}
+.job-stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.job-stats div {
+  padding: 14px 20px;
+  border-radius: 14px;
+  background: rgba(10, 11, 16, 0.6);
+  border: 1px solid var(--border);
+}
+.job-stats strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1.1;
+}
+.job-stats span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.job .feature-list strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 /* Mini projects */
 .mini-projects {
   display: grid;
@@ -982,6 +1054,14 @@ main {
     width: min(100%, 300px);
     justify-self: start;
   }
+  .chip-1 {
+    left: auto;
+    right: -24px;
+    top: 10%;
+  }
+  .chip-2 {
+    right: -24px;
+  }
   .project,
   .about-grid {
     grid-template-columns: 1fr;
@@ -995,6 +1075,11 @@ main {
   }
   .about-photo {
     max-width: 360px;
+  }
+  .job {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 28px;
   }
   .skills-grid {
     grid-template-columns: 1fr 1fr;
@@ -1059,6 +1144,14 @@ main {
   }
   .pipeline {
     padding: 20px 10px;
+  }
+  .job {
+    padding: 22px 18px;
+    border-radius: 20px;
+  }
+  .job-stats div {
+    flex: 1;
+    padding: 12px 14px;
   }
   .pipe-branch .pipe-node {
     font-size: 12px;
