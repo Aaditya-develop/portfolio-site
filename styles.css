@@ -855,8 +855,8 @@ main {
 /* ---------- Experience ---------- */
 .job {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 40px;
+  grid-template-columns: 260px 1fr;
+  gap: 44px;
   padding: 40px 44px;
   border-radius: 26px;
   background: linear-gradient(180deg, var(--bg-card), var(--bg-elev));
@@ -879,6 +879,41 @@ main {
   border-left: 2px solid var(--accent-2);
   padding-left: 16px;
   align-self: start;
+}
+.job-side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.hq {
+  margin: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #0d1020;
+  box-shadow: var(--shadow), 0 0 60px -24px rgba(46, 230, 197, 0.45);
+}
+.hq svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hq figcaption {
+  padding: 12px 16px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border-top: 1px solid var(--border);
+}
+.hq figcaption i {
+  color: var(--accent-2);
+  margin-right: 4px;
+}
+.hq figcaption span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-top: 2px;
 }
 .job-dates {
   font-family: var(--font-mono);
@@ -1080,6 +1115,26 @@ main {
     grid-template-columns: 1fr;
     gap: 24px;
     padding: 28px;
+  }
+  .job-side {
+    gap: 18px;
+  }
+  .hq {
+    display: flex;
+    align-items: stretch;
+    max-width: 420px;
+  }
+  .hq svg {
+    width: 120px;
+    flex-shrink: 0;
+  }
+  .hq figcaption {
+    border-top: 0;
+    border-left: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 20px;
   }
   .skills-grid {
     grid-template-columns: 1fr 1fr;
